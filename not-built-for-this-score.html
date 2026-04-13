@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Not Built For This Score™ | Not Built For This</title>
+  <meta name="description" content="The Not Built For This Score™ is a framework for rating how environments, products and experiences work for neurodivergent people.">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+    :root{
+      --bg:#0F1829;
+      --bg2:#162035;
+      --bg3:#1C2A45;
+      --text:#F0EDE6;
+      --muted:rgba(240,237,230,0.55);
+      --orange:#D95520;
+      --border:rgba(255,255,255,0.07);
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{
+      font-family:'Plus Jakarta Sans',sans-serif;
+      background:linear-gradient(135deg,#1a2a4a 0%,#0F1829 40%,#0a1020 70%,#1a1535 100%);
+      color:var(--text);
+      line-height:1.7;
+      min-height:100vh;
+    }
+    nav{
+      padding:0 2rem;
+      height:56px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(15,24,41,0.95);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--border);
+    }
+    .logo{
+      font-family:'Syne',sans-serif;
+      font-size:1rem;
+      font-weight:700;
+      letter-spacing:-0.02em;
+      color:var(--text);
+      text-decoration:none;
+    }
+    .logo span{color:var(--orange);}
+    .nav-links{
+      display:flex;
+      gap:1.5rem;
+      align-items:center;
+    }
+    .nav-links a{
+      font-size:0.82rem;
+      color:var(--muted);
+      text-decoration:none;
+      font-weight:600;
+    }
+    .nav-links a:hover{color:var(--text);}
+    .nav-cta{
+      background:var(--orange)!important;
+      color:white!important;
+      padding:6px 16px;
+      border-radius:999px;
+      font-size:0.78rem!important;
+      font-weight:700!important;
+    }
+    .article-wrap{
+      max-width:760px;
+      margin:0 auto;
+      padding:4rem 2rem 6rem;
+    }
+    .article-tag{
+      font-size:0.7rem;
+      font-weight:700;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:var(--orange);
+      margin-bottom:1rem;
+      display:block;
+    }
+    h1{
+      font-family:'Syne',sans-serif;
+      font-size:clamp(2.2rem,5vw,3.4rem);
+      font-weight:700;
+      letter-spacing:-0.04em;
+      line-height:1.05;
+      margin-bottom:1.25rem;
+    }
+    h1 em{color:var(--orange);font-style:normal;}
+    h2{
+      font-family:'Syne',sans-serif;
+      font-size:1.45rem;
+      font-weight:700;
+      margin:2.5rem 0 1rem;
+      color:var(--text);
+      letter-spacing:-0.02em;
+    }
+    h3{
+      font-family:'Syne',sans-serif;
+      font-size:1rem;
+      font-weight:700;
+      margin-bottom:0.4rem;
+      color:var(--text);
+    }
+    p{
+      font-size:0.97rem;
+      color:var(--muted);
+      line-height:1.85;
+      margin-bottom:1.1rem;
+    }
+    .intro{
+      font-size:1.08rem;
+      color:var(--text);
+    }
+    .score-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:1rem;
+      margin:2rem 0;
+    }
+    .score-card{
+      background:var(--bg2);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:1.25rem 1.4rem;
+    }
+    .score-card p{
+      margin:0;
+      font-size:0.9rem;
+    }
+    .how-it-works{
+      background:var(--bg2);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:1.5rem;
+      margin:2rem 0;
+    }
+    .how-it-works ul{
+      margin:0.75rem 0 0 1.2rem;
+      color:var(--muted);
+    }
+    .how-it-works li{
+      margin-bottom:0.7rem;
+    }
+    .review-links{
+      display:flex;
+      flex-direction:column;
+      gap:1rem;
+      margin-top:1rem;
+    }
+    .review-links a{
+      display:block;
+      background:var(--bg2);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:1rem 1.2rem;
+      color:var(--text);
+      text-decoration:none;
+      font-weight:600;
+    }
+    .review-links a:hover{
+      border-color:rgba(255,255,255,0.15);
+    }
+    .cta-box{
+      background:var(--bg2);
+      border:1px solid rgba(217,85,32,0.3);
+      border-radius:20px;
+      padding:2.3rem;
+      text-align:center;
+      margin:3rem 0 0;
+    }
+    .cta-box h3{
+      font-size:1.25rem;
+      margin-bottom:0.75rem;
+    }
+    .cta-box p{
+      font-size:0.92rem;
+      margin-bottom:1.4rem;
+    }
+    .btn-primary{
+      background:var(--orange);
+      color:white;
+      padding:0.85rem 1.75rem;
+      border-radius:14px;
+      font-family:'Syne',sans-serif;
+      font-weight:700;
+      font-size:0.9rem;
+      text-decoration:none;
+      display:inline-block;
+    }
+    footer{
+      border-top:1px solid var(--border);
+      padding:2rem;
+      text-align:center;
+      font-size:0.78rem;
+      color:var(--muted);
+    }
+    footer a{
+      color:var(--muted);
+      text-decoration:none;
+      margin:0 0.5rem;
+    }
+    footer a:hover{color:var(--text);}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="logo">Not Built For <span>This</span></a>
+    <div class="nav-links">
+      <a href="/about.html">About</a>
+      <a href="https://doompile.co.uk" target="_blank" class="nav-cta">Doom Pile →</a>
+    </div>
+  </nav>
+
+  <div class="article-wrap">
+    <span class="article-tag">Framework</span>
+
+    <h1>The Not Built For <em>This</em> Score™</h1>
+
+    <p class="intro">
+      The Not Built For This Score™ is a framework for rating how environments, experiences and products work for neurodivergent people. It exists because most reviews tell you whether something is good in general — not whether it works for a brain like yours.
+    </p>
+
+    <p>
+      This framework is used across Not Built For This reviews to assess what actually matters when you are managing overwhelm, executive dysfunction, sensory load, social pressure, energy, and recovery.
+    </p>
+
+    <h2>What the score measures</h2>
+
+    <div class="score-grid">
+      <div class="score-card">
+        <h3>🧠 Sensory Load</h3>
+        <p>How intense is the environment? Noise, crowds, lighting, visual clutter, unpredictability, and whether your nervous system gets a chance to stay regulated.</p>
+      </div>
+
+      <div class="score-card">
+        <h3>🚪 Escape Routes</h3>
+        <p>How easy is it to step away, reset, leave early, or take a break without everything falling apart?</p>
+      </div>
+
+      <div class="score-card">
+        <h3>🍕 Food Without Faff</h3>
+        <p>Is it easy to access simple, reliable food without loads of planning, queues, decisions, or effort?</p>
+      </div>
+
+      <div class="score-card">
+        <h3>💬 Social Pressure</h3>
+        <p>Does the experience let you participate on your own terms, or does it make you feel pushed to perform, mingle, stay longer, or keep up?</p>
+      </div>
+
+      <div class="score-card">
+        <h3>🔋 Recovery Friendly</h3>
+        <p>How easy is it to recover? This includes sleep, quiet, comfort, downtime, pacing, and whether the setup supports your energy rather than drains it.</p>
+      </div>
+    </div>
+
+    <h2>How scoring works</h2>
+
+    <div class="how-it-works">
+      <p>Each category is scored out of 5.</p>
+      <ul>
+        <li><strong>1/5</strong> = actively difficult for neurodivergent people</li>
+        <li><strong>3/5</strong> = manageable, but with clear friction</li>
+        <li><strong>5/5</strong> = genuinely supportive, flexible, and easy to navigate</li>
+      </ul>
+      <p style="margin-top:1rem;">
+        The total score is out of 25. Higher scores mean the experience is more usable, flexible and recovery-aware for neurodivergent people.
+      </p>
+    </div>
+
+    <h2>Why this score exists</h2>
+    <p>
+      Most reviews prioritise price, aesthetics, convenience, or popularity. Those things matter — but they do not tell you whether a place, product, or experience will actually work if you are easily overstimulated, struggle with planning, forget to eat, need clear escape routes, or crash hard after social exertion.
+    </p>
+
+    <p>
+      The Not Built For This Score™ exists to make those realities visible.
+    </p>
+
+    <h2>Where the score is used</h2>
+    <p>
+      This framework is used across reviews on Not Built For This. Over time, it will be applied to festivals, hotels, travel, products, tools, workplaces, events, and everyday experiences.
+    </p>
+
+    <div class="review-links">
+      <a href="/posts/snowbombing.html">Snowbombing: Is It ADHD Friendly? →</a>
+    </div>
+
+    <div class="cta-box">
+      <h3>When life gets hard to navigate, Doom Pile helps you start</h3>
+      <p>Doom Pile is a tool built for overwhelm, avoidance and executive dysfunction. First try is free.</p>
+      <a href="https://doompile.co.uk" target="_blank" class="btn-primary">Try Doom Pile →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 SJK Labs · <a href="/posts/">Stories</a> · <a href="/about.html">About</a> · <a href="https://doompile.co.uk" target="_blank">Doom Pile</a></p>
+  </footer>
+</body>
+</html>
