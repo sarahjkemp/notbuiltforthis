@@ -1,0 +1,163 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.p{font-family:'Plus Jakarta Sans',sans-serif;background:rgb(15,24,41);color:rgb(240,237,230)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;border-bottom:1px solid rgba(240,237,230,0.08);position:sticky;top:0;z-index:10;background:rgba(15,24,41,0.97)}
+.nav-logo{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:rgb(240,237,230)}
+.nav-logo span{color:rgb(217,85,32)}
+.nav-cta{background:rgb(139,92,246);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:600;padding:8px 18px;border-radius:999px;text-decoration:none;cursor:pointer;border:none}
+.inner{max-width:900px;margin:0 auto;padding:0 40px}
+.hero{padding:72px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1fr 340px;gap:40px;align-items:end}
+.hero-left{}
+.overline{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgb(217,85,32);margin-bottom:20px}
+h1{font-family:'Syne',sans-serif;font-size:58px;font-weight:800;line-height:1.05;margin-bottom:24px;color:rgb(240,237,230)}
+h1 em{font-style:normal;color:rgb(217,85,32)}
+.hero-body{font-size:16px;color:rgba(240,237,230,0.55);line-height:1.75;margin-bottom:36px}
+.cta-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+.btn-primary{background:rgb(217,85,32);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:600;padding:14px 28px;border-radius:14px;cursor:pointer;border:none;text-decoration:none}
+.btn-ghost{background:rgb(22,32,53);color:rgb(240,237,230);font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:500;padding:14px 28px;border-radius:14px;cursor:pointer;border:none;text-decoration:none}
+.sub-note{font-size:13px;color:rgba(240,237,230,0.35)}
+.hero-photo{position:relative;align-self:end}
+.hero-photo img{width:100%;max-width:300px;display:block;border-radius:20px 20px 0 0;object-fit:cover;filter:drop-shadow(0 0 0 transparent)}
+.hero-badge{position:absolute;bottom:16px;left:16px;background:rgba(15,24,41,0.9);border-radius:10px;padding:10px 14px;font-size:12px;color:rgba(240,237,230,0.7);backdrop-filter:blur(4px)}
+.ticker{background:rgb(217,85,32);padding:10px 0;overflow:hidden;white-space:nowrap}
+.ticker-inner{display:inline-block;animation:tick 20s linear infinite}
+.ticker-inner span{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#fff;padding:0 24px}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.section{padding:56px 0}
+.section-label{font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,237,230,0.4);margin-bottom:14px}
+h2{font-family:'Syne',sans-serif;font-size:36px;font-weight:800;margin-bottom:10px;color:rgb(240,237,230)}
+h2 em{font-style:normal;color:rgb(217,85,32)}
+.lead{font-size:16px;color:rgba(240,237,230,0.55);line-height:1.7;max-width:600px;margin-bottom:32px}
+.divider{border:none;border-top:1px solid rgba(240,237,230,0.08)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:rgb(22,32,53);border-radius:20px;padding:28px}
+.card-tag-pill{display:inline-block;background:rgb(217,85,32);color:#fff;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:14px}
+.card h3{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px;color:rgb(240,237,230)}
+.card p{font-size:14px;color:rgba(240,237,230,0.55);line-height:1.65}
+.for-you{display:flex;flex-direction:column;gap:14px}
+.check{display:flex;align-items:flex-start;gap:14px;font-size:16px;color:rgba(240,237,230,0.75);line-height:1.55}
+.odot{width:7px;height:7px;min-width:7px;background:rgb(217,85,32);border-radius:50%;margin-top:7px}
+.upsell{background:rgb(22,32,53);border-radius:20px;padding:32px;margin-top:32px;position:relative;overflow:hidden;border:1.5px solid rgba(139,92,246,0.3)}
+.upsell-badge{position:absolute;top:0;right:0;background:rgb(217,85,32);color:#fff;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:8px 16px;border-radius:0 18px 0 12px}
+.upsell-grid{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+.dp-brand{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;color:rgb(240,237,230);line-height:1.1;white-space:nowrap}
+.dp-brand span{color:rgb(139,92,246)}
+.upsell h3{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;margin-bottom:4px;color:rgb(240,237,230)}
+.price-was{font-size:13px;color:rgba(240,237,230,0.4);text-decoration:line-through;margin-bottom:4px}
+.price-now{font-size:28px;font-weight:800;font-family:'Syne',sans-serif;color:rgb(139,92,246);margin-bottom:8px}
+.price-now span{font-size:14px;font-weight:500;color:rgba(240,237,230,0.55);font-family:'Plus Jakarta Sans',sans-serif}
+.upsell p{font-size:14px;color:rgba(240,237,230,0.55);line-height:1.65;margin-bottom:16px}
+.countdown{display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:13px;color:rgba(240,237,230,0.5)}
+.pulse{width:8px;height:8px;background:rgb(217,85,32);border-radius:50%;animation:pulse 1.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
+.btn-purple{background:rgb(139,92,246);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:600;padding:12px 24px;border-radius:14px;cursor:pointer;border:none;text-decoration:none;display:inline-block}
+.footer{padding:28px 40px;border-top:1px solid rgba(240,237,230,0.08);text-align:center}
+.footer p{font-size:13px;color:rgba(240,237,230,0.3)}
+.footer a{color:rgb(217,85,32);text-decoration:none}
+</style>
+
+<div class="p">
+  <nav class="nav">
+    <div class="nav-logo">Not Built For <span>This</span></div>
+    <a class="nav-cta" href="https://doompile.co.uk" target="_blank">Doom Pile →</a>
+  </nav>
+
+  <div class="inner">
+    <div class="hero">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="overline">Digital product · instant download</div>
+          <h1>The pile<br>isn't <em>laziness.</em><br>Here's the fix.</h1>
+          <p class="hero-body">The ADHD Admin Starter Kit — a no-fluff system for finally getting a handle on the stuff that's been sitting there for months. Built for late-diagnosed adults and anyone who's excelling on paper but drowning in the admin.</p>
+          <div class="cta-row">
+            <button class="btn-primary" onclick="alert('Link your Gumroad/Stripe checkout here!')">Get the kit — £9 →</button>
+            <a class="btn-ghost" href="https://doompile.co.uk" target="_blank">Try Doom Pile</a>
+          </div>
+          <p class="sub-note">Instant PDF download · works on any device · no subscription</p>
+        </div>
+        <div class="hero-photo">
+          <img src="/mnt/user-data/uploads/sarah-pic.png" alt="Sarah Kemp, founder of Not Built For This" />
+          <div class="hero-badge">Sarah Kemp — Founder, SJK Labs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span>ADHD Life</span><span>·</span><span>Corporate Escapees</span><span>·</span><span>Practical Guides</span><span>·</span><span>Late Diagnosis</span><span>·</span><span>Doom Pile</span><span>·</span><span>ADHD Life</span><span>·</span><span>Corporate Escapees</span><span>·</span><span>Practical Guides</span><span>·</span><span>Late Diagnosis</span><span>·</span><span>Doom Pile</span><span>·</span>
+    </div>
+  </div>
+
+  <div class="inner">
+    <div class="section">
+      <div class="section-label">What's inside</div>
+      <h2>Four things that <em>actually</em> help.</h2>
+      <p class="lead">No motivational filler. No 'just break it into steps'. This is the kit for when you know what you should be doing and still can't start.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="card-tag-pill">Checklist</div>
+          <h3>The ADHD admin checklist</h3>
+          <p>Every adult task you're avoiding, broken into the smallest possible actions. Bills, insurance, renewals, the letter you haven't opened.</p>
+        </div>
+        <div class="card">
+          <div class="card-tag-pill">Method</div>
+          <h3>Doom pile triage guide</h3>
+          <p>A 3-step method for sorting the pile without spiralling into shame. Start here if you're already overwhelmed.</p>
+        </div>
+        <div class="card">
+          <div class="card-tag-pill">Neuroscience</div>
+          <h3>Why it piles up</h3>
+          <p>The actual brain science behind why this happens — so you can stop thinking it's a character flaw and start treating it as a system problem.</p>
+        </div>
+        <div class="card">
+          <div class="card-tag-pill">Template</div>
+          <h3>Weekly reset routine</h3>
+          <p>A 15-minute weekly reset to stop it building back up again. Simple, repeatable, doable on a bad brain day.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <div class="section-label">This is for you if...</div>
+      <h2>Sound <em>familiar?</em></h2>
+      <div class="for-you">
+        <div class="check"><div class="odot"></div><span>You have a pile of post you haven't opened in months</span></div>
+        <div class="check"><div class="odot"></div><span>You keep meaning to cancel that subscription, call that number, sort that thing</span></div>
+        <div class="check"><div class="odot"></div><span>You're smart and capable, and yet somehow the admin is still winning</span></div>
+        <div class="check"><div class="odot"></div><span>You've recently been diagnosed — or you're starting to wonder if you are</span></div>
+        <div class="check"><div class="odot"></div><span>You just want someone to write a list you can actually follow</span></div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <div class="section-label">Limited time offer</div>
+      <h2>Already got the kit? <em>The app does the daily bit.</em></h2>
+      <div class="upsell">
+        <div class="upsell-badge">Limited time</div>
+        <div class="upsell-grid">
+          <div class="dp-brand">doom<span>pile</span></div>
+          <div>
+            <h3>Doom Pile</h3>
+            <div class="price-was">£4.99/month</div>
+            <div class="price-now">£4.99 <span>one-off · lifetime access</span></div>
+            <div class="countdown"><div class="pulse"></div> Offer ends soon — price goes up when this runs out</div>
+            <p>Bills, cleaning, food, focus, sleep. When you're stuck and just need to be told what to do first — that's what Doom Pile is for. Normally a monthly subscription. Right now, one payment, yours forever.</p>
+            <a class="btn-purple" href="https://doompile.co.uk" target="_blank">Get lifetime access — £4.99 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Made by <a href="https://notbuiltforthis.co">Not Built For This</a> · SJK Labs · For brains that don't fit the system</p>
+  </div>
+</div>
