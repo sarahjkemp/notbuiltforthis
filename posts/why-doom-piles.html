@@ -20,7 +20,7 @@
   .nav-cta{background:var(--orange)!important;color:white!important;padding:6px 16px;border-radius:999px;font-size:0.78rem!important;font-weight:700!important;}
   .hero{max-width:960px;margin:0 auto;padding:5rem 2rem 4rem;display:grid;grid-template-columns:1.1fr 0.9fr;gap:4rem;align-items:center;}
   .hero-left h1{font-family:'Syne',sans-serif;font-size:clamp(2.6rem,6vw,4rem);font-weight:700;line-height:1;letter-spacing:-0.04em;margin-bottom:1.5rem;}
-  .hero-left h1 em{color:var(--orange);font-style:normal;}
+  .hero-left h1 em{color:var(--orange);font-:normal;}
   .hero-left p{font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;max-width:380px;}
   .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
   .btn-primary{background:var(--orange);color:white;padding:0.85rem 1.75rem;border-radius:14px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;text-decoration:none;}
@@ -100,6 +100,96 @@
     .about-img{max-width:240px;}
   }
 </style>
+  <!-- Schema: WebSite, Organization, Article, FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://notbuiltforthis.co/#website",
+  "url": "https://notbuiltforthis.co",
+  "name": "Not Built For This",
+  "description": "Low-friction digital tools for neurodivergent and overwhelmed people. ADHD resources, doom pile guides, and the Doom Pile tool."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://notbuiltforthis.co/#organisation",
+  "name": "Not Built For This",
+  "url": "https://notbuiltforthis.co",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://notbuiltforthis.co/#sarah-kemp"
+  },
+  "sameAs": [
+    "https://www.tiktok.com/@doompilesarah",
+    "https://sjklabs.co",
+    "https://doompile.co.uk",
+    "https://www.linkedin.com/in/sarahjkemp/"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why You Create Doom Piles (and Can't Start Sorting Them)",
+  "description": "The psychology behind doom piles — rooted in executive dysfunction, threat-detection, dopamine dysregulation, and shame spirals. Why willpower doesn't fix them.",
+  "author": {
+    "@type": "Person",
+    "@id": "https://notbuiltforthis.co/#sarah-kemp"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://notbuiltforthis.co/#organisation"
+  },
+  "url": "https://notbuiltforthis.co/posts/why-doom-piles.html",
+  "datePublished": "2026-03-01",
+  "articleSection": "Psychology",
+  "keywords": "ADHD, doom pile, executive dysfunction, neurodivergence, task avoidance, overwhelm, neuroscience, shame spiral",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Not Built For This Stories",
+    "url": "https://notbuiltforthis.co/posts/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why can't I just start clearing my doom pile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your brain's threat-detection system activates when tasks feel uncertain, triggering a freeze response that makes avoidance feel safer than action. This is especially pronounced in people with executive dysfunction (ADHD, autism, anxiety, depression). It's not a character flaw — it's neurobiology."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the shame spiral with doom piles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The shame spiral works like this: task feels overwhelming → avoidance feels safer → pile grows → shame increases → task feels more overwhelming → pile grows more. Shame is one of the most powerful inhibitors of action, making the problem worse over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why doesn't productivity advice help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most productivity systems were designed for neurotypical brains. They assume a good system will make you start. For people with executive dysfunction, that assumption is wrong. You can have an excellent to-do list and still can't start. The gap between the list and action is the real problem."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <nav>
