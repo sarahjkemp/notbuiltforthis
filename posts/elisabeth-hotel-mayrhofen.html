@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elisabeth Hotel, Mayrhofen — the honest review | Not Built For This</title>
+<meta name="description" content="An honest neurodivergent hotel review of the Elisabeth Hotel in Mayrhofen, Austria — sleep, spa, sensory load, recovery, and The Not Built For This Score.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0F1829;--bg2:#162035;--bg3:#1C2A45;--text:#F0EDE6;--muted:rgba(240,237,230,0.55);--muted2:rgba(240,237,230,0.72);--orange:#D95520;--border:rgba(255,255,255,0.07);}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:linear-gradient(135deg,#1a2a4a 0%,#0F1829 40%,#0a1020 70%,#1a1535 100%);color:var(--text);line-height:1.75;min-height:100vh;}
+nav{padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;background:rgba(15,24,41,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+.logo{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;letter-spacing:-0.02em;color:var(--text);text-decoration:none;}
+.logo span{color:var(--orange);}
+.nav-links{display:flex;gap:1.5rem;align-items:center;}
+.nav-links a{font-size:0.82rem;color:var(--muted);text-decoration:none;font-weight:600;transition:color 0.15s;}
+.nav-links a:hover{color:var(--text);}
+.nav-cta{background:var(--orange)!important;color:white!important;padding:6px 16px;border-radius:999px;font-size:0.78rem!important;font-weight:700!important;}
+main{max-width:720px;margin:0 auto;padding:4rem 2rem 6rem;}
+.article-tag{font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--orange);margin-bottom:1rem;display:block;}
+h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3rem);font-weight:700;letter-spacing:-0.04em;line-height:1.05;margin-bottom:1.5rem;}
+h1 em{color:var(--orange);font-style:normal;}
+.article-meta{font-size:0.82rem;color:var(--muted);margin-bottom:2.25rem;display:flex;gap:1rem;flex-wrap:wrap;}
+h2{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--text);}
+h3{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;margin:1.5rem 0 0.5rem;color:var(--orange);}
+p{font-size:0.97rem;color:var(--muted);line-height:1.85;margin-bottom:1.1rem;}
+p strong{color:var(--text);font-weight:600;}
+.intro{font-size:1.1rem;color:var(--text);line-height:1.8;margin-bottom:2rem;}
+.quote{border-left:3px solid var(--orange);padding:1rem 1.5rem;margin:2rem 0;font-size:1rem;color:var(--text);line-height:1.6;font-style:italic;}
+.quick-facts{background:var(--bg2);border:1px solid rgba(217,85,32,0.25);border-radius:16px;padding:1.25rem 1.5rem;margin:2rem 0;}
+.quick-facts-title{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--orange);margin-bottom:0.75rem;font-weight:700;}
+.quick-fact{font-size:0.9rem;color:var(--muted2);padding:4px 0;display:flex;gap:8px;}
+.quick-fact span:first-child{color:var(--orange);flex-shrink:0;}
+.pile-score-card{background:var(--bg2);border:1px solid rgba(217,85,32,0.25);border-radius:20px;padding:1.75rem;margin:2rem 0 2.5rem;}
+.pile-score-title{font-family:'Syne',sans-serif;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--orange);margin-bottom:1.25rem;}
+.score-row{display:flex;justify-content:space-between;align-items:center;padding:0.65rem 0;border-bottom:1px solid var(--border);font-size:0.9rem;gap:1rem;}
+.score-row:last-of-type{border-bottom:none;}
+.score-label{color:var(--text);display:flex;align-items:center;gap:8px;}
+.score-dots{display:flex;gap:4px;}
+.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.12);}
+.dot.filled{background:var(--orange);}
+.pile-score-total{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+.pile-score-total .label{font-family:'Syne',sans-serif;font-size:0.9rem;font-weight:700;color:var(--text);}
+.pile-score-total .score{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:700;color:var(--orange);}
+.pile-score-total .out-of{font-size:0.8rem;color:var(--muted);}
+.verdict{margin-top:1rem;font-size:0.88rem;color:var(--muted2);font-style:italic;line-height:1.6;}
+.tip-box{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--orange);border-radius:0 12px 12px 0;padding:1rem 1.25rem;margin:1.5rem 0;font-size:0.9rem;color:var(--muted2);line-height:1.65;}
+.tip-box strong{color:var(--orange);font-weight:700;}
+.cta-box{background:var(--bg2);border:1px solid rgba(217,85,32,0.3);border-radius:20px;padding:2.5rem;text-align:center;margin:3rem 0;}
+.cta-box h3{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:0.75rem;color:var(--text);}
+.cta-box p{font-size:0.9rem;color:var(--muted);margin-bottom:1.5rem;}
+.btn{display:inline-block;background:var(--orange);color:white;padding:0.85rem 1.75rem;border-radius:14px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;text-decoration:none;}
+.related{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);}
+.related-links{display:flex;flex-direction:column;gap:0.75rem;}
+.related-links a{color:var(--orange);text-decoration:none;font-size:0.9rem;font-weight:600;}
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-size:0.78rem;color:var(--muted);}
+footer a{color:var(--muted);text-decoration:none;margin:0 0.5rem;}
+footer a:hover{color:var(--text);}
+.article-img{width:100%;border-radius:16px;margin:1.5rem 0;display:block;object-fit:cover;border:1px solid var(--border);}
+.article-img.portrait{max-height:640px;object-fit:cover;}
+.img-caption{font-size:0.78rem;color:var(--muted2);text-align:center;margin-top:-0.75rem;margin-bottom:1.5rem;font-style:italic;}
+@media(max-width:768px){nav{padding:0 1rem;} main{padding:3rem 1.25rem 5rem;} .nav-links{gap:1rem;} .score-row,.pile-score-total{align-items:flex-start;}}
+</style>
+<meta property="og:title" content="Elisabeth Hotel, Mayrhofen — the honest review | Not Built For This">
+<meta property="og:description" content="An honest neurodivergent hotel review of the Elisabeth Hotel in Mayrhofen — sleep, spa, sensory load, recovery, and The Not Built For This Score.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://notbuiltforthis.co/posts/elisabeth-hotel-mayrhofen.html">
+<meta property="og:image" content="https://notbuiltforthis.co/images/elisabeth-balcony.jpg">
+<meta name="author" content="Sarah Kemp">
+<meta name="keywords" content="Elisabeth Hotel review, Mayrhofen hotel review, Snowbombing hotel, ADHD travel, neurodivergent hotel review, Austria spa hotel, Elisabeth Hotel Mayrhofen spa">
+<meta property="article:published_time" content="2026-04-16">
+<link rel="canonical" href="https://notbuiltforthis.co/posts/elisabeth-hotel-mayrhofen.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "name": "Elisabeth Hotel, Mayrhofen — the honest review",
+  "author": {
+    "@type": "Person",
+    "name": "Sarah Kemp",
+    "url": "https://notbuiltforthis.co/about.html"
+  },
+  "datePublished": "2026-04-16",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Not Built For This",
+    "url": "https://notbuiltforthis.co"
+  },
+  "itemReviewed": {
+    "@type": "Hotel",
+    "name": "Elisabeth Hotel Premium Private Retreat",
+    "location": {
+      "@type": "Place",
+      "name": "Mayrhofen, Austria"
+    },
+    "url": "https://www.elisabethhotel.com"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "24",
+    "bestRating": "25",
+    "worstRating": "0"
+  },
+  "reviewBody": "I treated myself for Snowbombing this time and the Elisabeth Hotel turned out to be exactly the kind of recovery-friendly place my brain needed: brilliant sleep, a huge spa, kind low-pressure service, and the rare feeling that a hotel actually makes you better rather than more depleted.",
+  "description": "An honest neurodivergent hotel review of the Elisabeth Hotel in Mayrhofen, Austria — covering sleep quality, sensory load, social pressure, breakfast, spa facilities, and recovery infrastructure."
+}
+</script>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">Not Built For <span>This</span></a>
+  <div class="nav-links">
+    <a href="/about.html">About</a>
+    <a href="https://www.tiktok.com/@doompilesarah" target="_blank" class="nav-cta">@doompilesarah →</a>
+  </div>
+</nav>
+<main>
+  <div class="article-tag">Hotel Review</div>
+  <h1>Elisabeth Hotel, Mayrhofen: worth the <em>upgrade?</em></h1>
+  <div class="article-meta">
+    <span>📅 April 2026</span>
+    <span>⏱ 5 min read</span>
+    <span>📍 Mayrhofen, Austria</span>
+  </div>
+  <p class="intro">Nine years ago I did Snowbombing the cheap way: shared room, barely slept there, and my friend came home with bed bugs. This time I treated myself and booked the Elisabeth Hotel. Reader, it was heavenly.</p>
+  <div class="pile-score-card">
+    <div class="pile-score-title">The Not Built For This Score — neurodivergent friendly rating</div>
+    <div class="score-row" style="flex-wrap:wrap;gap:4px">
+      <div class="score-label" style="width:100%;justify-content:space-between">
+        <span>🧠 Sensory load</span>
+        <div class="score-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div>
+      </div>
+      <div style="font-size:0.78rem;color:var(--muted2);line-height:1.5;padding-top:2px">Warm lighting, thick quiet, soft communal spaces, mountain views, and none of the frantic budget-hotel energy that makes your nervous system feel slightly under attack.</div>
+    </div>
+    <div class="score-row" style="flex-wrap:wrap;gap:4px">
+      <div class="score-label" style="width:100%;justify-content:space-between">
+        <span>🚪 Escape routes</span>
+        <div class="score-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div>
+      </div>
+      <div style="font-size:0.78rem;color:var(--muted2);line-height:1.5;padding-top:2px">When Snowbombing gets loud, you can disappear into the spa, the room, the balcony, the quiet lounge, or the outdoor jacuzzi and feel human again within minutes.</div>
+    </div>
+    <div class="score-row" style="flex-wrap:wrap;gap:4px">
+      <div class="score-label" style="width:100%;justify-content:space-between">
+        <span>🍕 Food without faff</span>
+        <div class="score-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div>
+      </div>
+      <div style="font-size:0.78rem;color:var(--muted2);line-height:1.5;padding-top:2px">Breakfast was fantastic and easy, but I’m docking one point because hotel dining still runs on hotel timings. If your brain wants toast at an odd hour, you still need to fend for yourself.</div>
+    </div>
+    <div class="score-row" style="flex-wrap:wrap;gap:4px">
+      <div class="score-label" style="width:100%;justify-content:space-between">
+        <span>💬 Social pressure</span>
+        <div class="score-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div>
+      </div>
+      <div style="font-size:0.78rem;color:var(--muted2);line-height:1.5;padding-top:2px">Perfect balance. The service was attentive but not clingy, I was mostly left alone, and the other guests were lovely in that civilised “we are all here to relax” kind of way.</div>
+    </div>
+    <div class="score-row" style="flex-wrap:wrap;gap:4px">
+      <div class="score-label" style="width:100%;justify-content:space-between">
+        <span>🔋 Recovery friendly</span>
+        <div class="score-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div>
+      </div>
+      <div style="font-size:0.78rem;color:var(--muted2);line-height:1.5;padding-top:2px">This is where the Elisabeth absolutely runs away with it. Best hotel bed I’ve slept in for a long time, heated bathroom floors, radio in the bathroom, enormous spa, waterbeds, and one of the best massages I’ve ever had.</div>
+    </div>
+    <div class="pile-score-total">
+      <div>
+        <div class="label">The Not Built For This Score</div>
+        <div class="out-of">out of 25</div>
+      </div>
+      <div class="score">24/25</div>
+    </div>
+    <div class="verdict">A genuinely restorative hotel in the middle of a festival town. Expensive, yes. But if your brain needs proper recovery infrastructure, this is the kind of money that changes the whole trip.</div>
+  </div>
+  <div class="quick-facts">
+    <div class="quick-facts-title">The basics</div>
+    <div class="quick-fact"><span>📍</span> Mayrhofen, Austria</div>
+    <div class="quick-fact"><span>🌐</span> <a href="https://www.elisabethhotel.com" target="_blank" style="color:var(--orange);text-decoration:none">elisabethhotel.com</a></div>
+    <div class="quick-fact"><span>🎿</span> Great base for Snowbombing and close to the Penkenbahn</div>
+    <div class="quick-fact"><span>🛁</span> Spa hotel with serious recovery credentials</div>
+    <div class="quick-fact"><span>💸</span> Definitely a treat, not a “just somewhere to crash” booking</div>
+  </div>
+  <img src="/images/elisabeth-balcony.jpg" alt="Balcony view from the Elisabeth Hotel in Mayrhofen" class="article-img portrait">
+  <p class="img-caption">The kind of balcony view that makes you forget you’re technically there for a festival.</p>
+  <h2>The difference between surviving a trip and actually enjoying it</h2>
+  <p>Last time I came to Snowbombing, I did what lots of people do in their twenties: book the cheapest room possible because it’s only somewhere to dump your bag. And yes, technically that works. But it also means sleeping badly, feeling ratty, never quite recovering, and treating the hotel like a holding pen between overstimulating events.</p>
+  <p>This time I wanted the opposite. I wanted somewhere that felt like a refuge rather than an afterthought. <strong>The Elisabeth delivered that in about ten minutes.</strong></p>
+  <div class="quote">"The website did not do it justice. Nor did Booking.com. The spa alone is worth half the room rate."</div>
+  <img src="/images/elisabeth-room.jpg" alt="Room at the Elisabeth Hotel with large bed and wooden interiors" class="article-img portrait">
+  <p class="img-caption">Massive bed. Wood-panelled calm. Zero budget-hotel chaos.</p>
+  <h2>The room: properly, gloriously comfortable</h2>
+  <p>The room was exactly what I wanted after a day of skiing, crowds and basslines: warm, quiet, spacious, and built for horizontal recovery. The bed was honestly one of the best hotel beds I’ve slept in for a long time. Not “fine”, not “better than expected”, but actively difficult to leave.</p>
+  <p>The bathroom also had heated floors and a built-in radio, which is such an unnecessary but delightful detail that it tipped the whole experience from “nice hotel” into “someone actually thought about pleasure”. There was also a clear view of the snow-capped mountains and the Penkenbahn, which made even my slower mornings feel like part of the trip rather than time lost to recovery.</p>
+  <h2>The spa: absurdly good</h2>
+  <p>I need to talk about the spa separately because it was not a token basement sauna pretending to be wellness. It was huge. Properly huge. And neither the website nor the Booking.com photos had prepared me for that.</p>
+  <p>There was an indoor pool, an indoor hot tub, a Finnish sauna, an aromatherapy steam room, an outdoor jacuzzi, a tranquil room with waterbeds, a gym, and a lounge area that felt like it had been designed specifically for people on the edge of sensory collapse. I also had a massage there and it was incredible. One of those massages where you walk out feeling taller, quieter and faintly reborn.</p>
+  <img src="/images/elisabeth-pool.jpg" alt="Indoor pool and spa area at the Elisabeth Hotel" class="article-img portrait">
+  <p class="img-caption">The part no listing photo really captured: it just kept going.</p>
+  <img src="/images/elisabeth-lounge.jpg" alt="Quiet lounge area at the Elisabeth Hotel spa" class="article-img portrait">
+  <p class="img-caption">If your nervous system likes low lighting and soft seating, this place gets it.</p>
+  <div class="tip-box"><strong>Who this is for:</strong> if you love festivals but you also know your brain needs a proper off-switch, this is exactly the sort of hotel that makes the difference between “I powered through” and “I actually had a brilliant time.”</div>
+  <h2>Breakfast and people</h2>
+  <p>The breakfast buffet was fantastic: loads of choice, beautifully done, and easy to navigate even when my brain was still booting up. That matters more than standard hotel reviews tend to admit. If food is too fiddly, too crowded, or too decision-heavy, the day starts badly. Here it felt smooth.</p>
+  <p>The service was attentive without being overbearing, which is my ideal. Someone was clearly paying attention, but nobody was hovering, interrupting or trying to turn breakfast into a personality test. I was mostly left alone, which felt respectful rather than neglectful. The other guests were lovely too. Not rowdy, not weirdly performative, just calm.</p>
+  <h2>So, is it worth it?</h2>
+  <p>If all you want is the cheapest possible place to sleep for a few hours between Snowbombing events, no. Book somewhere basic and accept the consequences.</p>
+  <p>But if you know you’re someone whose enjoyment of a trip depends on sleep, quiet, warmth, space, and a genuinely excellent place to decompress, then yes. Completely. <strong>The Elisabeth wasn’t just a nicer hotel. It changed the quality of the entire week.</strong></p>
+  <div class="cta-box">
+    <h3>More honest travel reviews for brains like yours</h3>
+    <p>Not Built For This reviews places by how they actually feel to navigate when you’re dealing with overwhelm, sensory load, burnout, or ADHD logistics.</p>
+    <a href="/posts/" class="btn">Read more reviews →</a>
+  </div>
+  <div class="related">
+    <div class="related-links">
+      <a href="/posts/snowbombing.html">→ Snowbombing 2026 — the honest review</a>
+      <a href="/not-built-for-this-score.html">→ What the Not Built For This Score measures</a>
+      <a href="/posts/what-is-doom-pile.html">→ What is a Doom Pile?</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>© 2026 SJK Labs · <a href="/posts/">Stories</a> · <a href="/about.html">About</a> · <a href="https://doompile.co.uk" target="_blank">Doom Pile</a></p>
+</footer>
+</body>
+</html>
