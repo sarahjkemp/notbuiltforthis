@@ -314,6 +314,25 @@
     border-radius:999px;
   }
 
+  .system-card-doom{
+    background:linear-gradient(135deg,#1a1535,#0f0f1a);
+    border-color:rgba(139,92,246,0.25);
+  }
+
+  .system-card-system{
+    background:linear-gradient(135deg,#1c2a45,#162035);
+    border-color:rgba(217,85,32,0.24);
+  }
+
+  .system-card-reset{
+    background:linear-gradient(135deg,#1a2238,#121a2d);
+    border-color:rgba(255,255,255,0.12);
+  }
+
+  .system-card-doom .system-tier{background:rgba(139,92,246,0.18);}
+  .system-card-system .system-tier{background:rgba(217,85,32,0.18);}
+  .system-card-reset .system-tier{background:rgba(255,255,255,0.1);}
+
   .system-card h3{
     font-family:'Syne',sans-serif;
     font-size:1.3rem;
@@ -336,6 +355,26 @@
   }
 
   .system-link:hover{color:var(--text);}
+
+  .system-doompile-logo{
+    font-family:'Syne',sans-serif;
+    font-size:1.7rem;
+    font-weight:700;
+    letter-spacing:-0.04em;
+    line-height:1;
+    margin-top:0.1rem;
+  }
+
+  .system-doompile-logo .doom{color:#fff;}
+  .system-doompile-logo .pile{color:#8B5CF6;}
+
+  .system-kicker{
+    font-size:0.74rem;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:rgba(240,237,230,0.62);
+  }
 
   .featured-grid{
     display:grid;
@@ -726,22 +765,24 @@
   <h2>The system</h2>
   <p class="system-intro">Three ways in, depending on where you're starting from.</p>
   <div class="system-grid">
-    <div class="system-card">
+    <div class="system-card system-card-doom">
       <div class="system-tier">£9.99/year</div>
-      <h3>Doom Pile</h3>
+      <div class="system-doompile-logo"><span class="doom">doom</span><span class="pile">pile</span></div>
       <p>The tool for when your brain won't let you start. Pick a pile, get one clear next step.</p>
       <a href="https://doompile.co.uk" target="_blank" class="system-link">Try Doom Pile →</a>
     </div>
 
-    <div class="system-card">
+    <div class="system-card system-card-system">
       <div class="system-tier">£3.99</div>
+      <div class="system-kicker">Digital workbook</div>
       <h3>The ADHD Admin System</h3>
       <p>A digital system for late-diagnosed adults, high-functioning strugglers, and anyone who looks fine on paper but feels buried by post, forms, renewals, bills, and the things they still haven't done.</p>
       <a href="https://6801130111572.gumroad.com/l/adhd-admin-starter-kit" target="_blank" class="system-link">Get the system →</a>
     </div>
 
-    <div class="system-card">
+    <div class="system-card system-card-reset">
       <div class="system-tier">Ticketed</div>
+      <div class="system-kicker">Live online session</div>
       <h3>The ADHD Admin Reset Session</h3>
       <p>A calm, no-shame online reset for adults with ADHD who feel buried by post, forms, bills, emails and life admin. Gentle mobility, guided admin triage, body doubling, and the 12-page ADHD Admin System workbook included.</p>
       <a href="https://buytickets.at/sjklabs/2184464" target="_blank" class="system-link">Join the next session →</a>
