@@ -340,6 +340,9 @@
     line-height:1.1;
   }
 
+  .system-card-system h3{max-width:12ch;}
+  .system-card-reset h3{max-width:14ch;}
+
   .system-card p{
     font-size:0.88rem;
     color:var(--muted);
@@ -374,6 +377,49 @@
     letter-spacing:0.08em;
     text-transform:uppercase;
     color:rgba(240,237,230,0.62);
+  }
+
+  .system-mark{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:fit-content;
+    min-width:108px;
+    padding:0.6rem 0.9rem;
+    border-radius:14px;
+    font-size:0.74rem;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    border:1px solid rgba(255,255,255,0.12);
+  }
+
+  .system-mark-workbook{
+    background:linear-gradient(135deg,rgba(217,85,32,0.2),rgba(217,85,32,0.08));
+    color:#ffd7c5;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,0.03);
+  }
+
+  .system-mark-reset{
+    background:linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.05));
+    color:rgba(240,237,230,0.82);
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,0.02);
+  }
+
+  .system-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.45rem;
+  }
+
+  .system-meta span{
+    font-size:0.7rem;
+    font-weight:700;
+    letter-spacing:0.05em;
+    color:rgba(240,237,230,0.72);
+    padding:0.35rem 0.55rem;
+    border-radius:999px;
+    background:rgba(255,255,255,0.06);
   }
 
   .featured-grid{
@@ -774,17 +820,21 @@
 
     <div class="system-card system-card-system">
       <div class="system-tier">£3.99</div>
+      <div class="system-mark system-mark-workbook">12-page workbook</div>
       <div class="system-kicker">Digital workbook</div>
       <h3>The ADHD Admin System</h3>
       <p>A digital system for late-diagnosed adults, high-functioning strugglers, and anyone who looks fine on paper but feels buried by post, forms, renewals, bills, and the things they still haven't done.</p>
+      <div class="system-meta"><span>Print-ready</span><span>Self-paced</span></div>
       <a href="https://6801130111572.gumroad.com/l/adhd-admin-starter-kit" target="_blank" class="system-link">Get the system →</a>
     </div>
 
     <div class="system-card system-card-reset">
       <div class="system-tier">Ticketed</div>
+      <div class="system-mark system-mark-reset">Guided live reset</div>
       <div class="system-kicker">Live online session</div>
       <h3>The ADHD Admin Reset Session</h3>
       <p>A calm, no-shame online reset for adults with ADHD who feel buried by post, forms, bills, emails and life admin. Gentle mobility, guided admin triage, body doubling, and the 12-page ADHD Admin System workbook included.</p>
+      <div class="system-meta"><span>Body doubling</span><span>No shame</span></div>
       <a href="https://buytickets.at/sjklabs/2184464" target="_blank" class="system-link">Join the next session →</a>
     </div>
   </div>
