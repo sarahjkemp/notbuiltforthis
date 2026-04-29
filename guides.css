@@ -140,6 +140,68 @@ strong{color:var(--text);}
   font-size:1.05rem;
 }
 
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(320px,0.92fr);
+  gap:1.4rem;
+  align-items:start;
+}
+
+.hero-main{
+  min-width:0;
+}
+
+.hero-side{
+  min-width:0;
+}
+
+.offer-badge{
+  display:inline-flex;
+  align-items:center;
+  padding:0.6rem 0.95rem;
+  border-radius:999px;
+  background:var(--orange-soft);
+  border:1px solid rgba(217,85,32,0.28);
+  color:var(--text);
+  font-family:'Syne',sans-serif;
+  font-size:0.98rem;
+  font-weight:700;
+  letter-spacing:-0.02em;
+  margin-bottom:1rem;
+}
+
+.offer-meta{
+  font-size:1rem;
+  color:rgba(240,237,230,0.8);
+  margin-bottom:1.15rem;
+}
+
+.photo-card{
+  margin-top:1.25rem;
+  max-width:320px;
+  position:relative;
+}
+
+.photo-card img{
+  width:100%;
+  display:block;
+  border-radius:22px;
+  object-fit:cover;
+}
+
+.photo-card-badge{
+  position:absolute;
+  left:1rem;
+  bottom:1rem;
+  background:rgba(15,24,41,0.9);
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:0.55rem 0.9rem;
+  font-size:0.75rem;
+  color:rgba(240,237,230,0.78);
+  backdrop-filter:blur(10px);
+}
+
 .summary-box,
 .info-box,
 .cta-box,
@@ -361,6 +423,12 @@ input[type="checkbox"]:focus{
   color:var(--text);
 }
 
+.hero-form-card{
+  background:linear-gradient(135deg,var(--bg2),rgba(28,42,69,0.96));
+  border:1px solid rgba(217,85,32,0.24);
+  box-shadow:0 22px 50px rgba(0,0,0,0.18);
+}
+
 .success-card{
   padding:1.6rem;
 }
@@ -427,4 +495,6 @@ footer a:hover{color:var(--text);}
   .page-shell{padding:0 1.5rem 4rem;}
   .page-hero{padding:3rem 0 2rem;}
   .card-grid{grid-template-columns:1fr;}
+  .hero-grid{grid-template-columns:1fr;}
+  .photo-card{max-width:260px;}
 }
