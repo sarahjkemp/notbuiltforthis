@@ -67,7 +67,6 @@
             <div id="mce-success-panel" class="success-card summary-box" style="display:none;">
               <h2>It's on its way.</h2>
               <p>Check your email — the PDF should land in under a minute. If it's not there in 5, check your spam folder and mark it "not spam" (this teaches your inbox to deliver future emails properly).</p>
-              <p>While you're here, the next page has the bit I couldn't fit in the PDF: why doing this stuff alone is the actual hard part.</p>
             </div>
             <form action="https://promptlypr.us6.list-manage.com/subscribe/post?u=39e1171eb01d9cde1732c28f5&amp;id=d3d5e4b139&amp;f_id=00e9eae1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
               <div id="mc_embed_signup_scroll" class="form-stack">
@@ -110,20 +109,7 @@
       <p>This PDF has 12 of mine. Plus the 3-minute regulation protocol I do before every call, and what to do when the script isn't enough.</p>
     </section>
 
-    <section class="content-section">
-      <div class="resource-card">
-        <div class="section-label">What's inside</div>
-        <h2>What's inside</h2>
-        <ul>
-          <li>6 phone scripts (booking, cancelling, chasing, voicemail)</li>
-          <li>4 email scripts (overdue replies, saying no, asking for clarity)</li>
-          <li>2 form scripts (the bits that trigger ADHD shutdown)</li>
-        </ul>
-        <p><em>Plus: the regulation protocol, the "when you can't even start" sequence, and one honest pitch at the bottom for the Reset Session — but only if the scripts work for you.</em></p>
-      </div>
-    </section>
-
-    <section class="content-section" id="reset-session-followup" style="display:none;">
+    <section class="content-section" id="reset-session-followup">
       <h2>Doing this alone is the hard part</h2>
       <p>The scripts work. I've tested them on dentists, energy companies, HMRC, my landlord, my GP. They work because they remove cognitive load.</p>
       <p>But here's the thing nobody talks about. Most ADHD adults don't fail because they don't have the right script. They fail because they're alone in the kitchen at 2pm trying to make the call and their nervous system is screaming and there's nobody there to say "now do it".</p>
@@ -137,11 +123,25 @@
         <p style="color:rgba(15,24,41,0.8);">Saturday 11 July 2026 · 90 minutes online · 20 spots</p>
         <p style="color:rgba(15,24,41,0.8);">Body-doubled admin. We do these scripts together. Nervous system regulation, then the calls, then the close.</p>
         <div class="button-row">
-          <a class="btn-primary" href="/reset-session.html">Join the waitlist →</a>
+          <a class="btn-primary" href="/reset-session.html">See the session →</a>
         </div>
-        <p style="color:rgba(15,24,41,0.72);">Waitlist gets 24-hour early access and £19 founder pricing.</p>
+        <p style="color:rgba(15,24,41,0.72);">Everyone on this list gets first notice when tickets open, plus £19 founder pricing.</p>
       </div>
     </section>
+
+    <section class="content-section">
+      <div class="resource-card">
+        <div class="section-label">What's inside</div>
+        <h2>What's inside</h2>
+        <ul>
+          <li>6 phone scripts (booking, cancelling, chasing, voicemail)</li>
+          <li>4 email scripts (overdue replies, saying no, asking for clarity)</li>
+          <li>2 form scripts (the bits that trigger ADHD shutdown)</li>
+        </ul>
+        <p><em>Plus: the regulation protocol, the "when you can't even start" sequence, and one honest pitch at the bottom for the Reset Session — but only if the scripts work for you.</em></p>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -155,7 +155,6 @@
       var successPanel = document.getElementById('mce-success-panel');
       var submitButton = document.getElementById('mc-embedded-subscribe');
       var note = document.querySelector('.form-note');
-      var followup = document.getElementById('reset-session-followup');
 
       if (!form) return;
 
@@ -173,9 +172,6 @@
         form.style.display = 'none';
         if (note) note.style.display = 'none';
         successPanel.style.display = 'block';
-        if (followup) {
-          followup.style.display = 'block';
-        }
         clearError();
         successPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
