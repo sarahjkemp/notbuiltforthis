@@ -258,6 +258,32 @@ ul,ol{margin:0 0 1rem 1.1rem;color:var(--muted);}
 
 li{margin-bottom:0.65rem;padding-left:0.15rem;}
 
+label{
+  display:block;
+  font-size:0.9rem;
+  font-weight:600;
+  color:var(--text);
+  margin-bottom:0.55rem;
+}
+
+input[type="email"]{
+  width:100%;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:rgba(255,255,255,0.04);
+  color:var(--text);
+  font:inherit;
+  padding:0.95rem 1rem;
+}
+
+input[type="email"]::placeholder{color:rgba(240,237,230,0.42);}
+
+input[type="email"]:focus,
+input[type="checkbox"]:focus{
+  outline:2px solid rgba(217,85,32,0.55);
+  outline-offset:2px;
+}
+
 .step-list{
   display:grid;
   gap:0.9rem;
@@ -284,6 +310,62 @@ li{margin-bottom:0.65rem;padding-left:0.15rem;}
 }
 
 .faq-item p:last-child{margin-bottom:0;}
+
+.form-card{
+  padding:1.35rem;
+}
+
+.form-stack{
+  display:grid;
+  gap:1rem;
+}
+
+.checkbox-row{
+  display:flex;
+  align-items:flex-start;
+  gap:0.75rem;
+}
+
+.checkbox-row input[type="checkbox"]{
+  margin-top:0.18rem;
+  accent-color:var(--orange);
+}
+
+.checkbox-row label{
+  margin:0;
+  font-size:0.92rem;
+  font-weight:500;
+  line-height:1.65;
+  color:var(--muted);
+}
+
+.form-note{
+  font-size:0.82rem;
+  color:rgba(240,237,230,0.5);
+  margin-top:0.75rem;
+}
+
+.form-response{
+  display:none;
+  padding:0.95rem 1rem;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,0.1);
+  font-size:0.92rem;
+  margin-bottom:0.25rem;
+}
+
+.form-response.is-error{
+  display:block;
+  background:rgba(217,85,32,0.12);
+  border-color:rgba(217,85,32,0.35);
+  color:var(--text);
+}
+
+.success-card{
+  padding:1.6rem;
+}
+
+.success-card p:last-child{margin-bottom:0;}
 
 .cta-box{
   padding:1.6rem;
