@@ -526,6 +526,21 @@ input[type="checkbox"]:focus{
   padding:1.6rem;
 }
 
+.success-bridge-card{
+  margin-top:1rem;
+  background:
+    linear-gradient(145deg, rgba(139,92,246,0.11), transparent 42%),
+    linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+}
+
+.success-bridge-card h3{
+  margin-bottom:0.45rem;
+}
+
+.success-bridge-card .button-row{
+  margin-top:0.85rem;
+}
+
 .success-card p:last-child{margin-bottom:0;}
 
 .cta-box{
