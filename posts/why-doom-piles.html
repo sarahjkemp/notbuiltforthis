@@ -30,7 +30,7 @@
   .nav-cta{background:var(--orange)!important;color:white!important;padding:6px 16px;border-radius:999px;font-size:0.78rem!important;font-weight:700!important;}
   .hero{max-width:960px;margin:0 auto;padding:5rem 2rem 4rem;display:grid;grid-template-columns:1.1fr 0.9fr;gap:4rem;align-items:center;}
   .hero-left h1{font-family:'Syne',sans-serif;font-size:clamp(2.6rem,6vw,4rem);font-weight:700;line-height:1;letter-spacing:-0.04em;margin-bottom:1.5rem;}
-  .hero-left h1 em{color:var(--orange);font-:normal;}
+  .hero-left h1 em{color:var(--orange);font-style:normal;}
   .hero-left p{font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;max-width:380px;}
   .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
   .btn-primary{background:var(--orange);color:white;padding:0.85rem 1.75rem;border-radius:14px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;text-decoration:none;}
@@ -87,6 +87,8 @@
   .article-wrap p{font-size:0.97rem;color:var(--muted);line-height:1.85;margin-bottom:1.1rem;}
   .article-wrap p strong{color:var(--text);font-weight:600;}
   .article-intro{font-size:1.1rem!important;color:var(--text)!important;}
+  .summary-box{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:18px;padding:1.1rem 1.25rem;margin:0 0 1.5rem;}
+  .summary-label{font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--orange);margin-bottom:0.45rem;}
   .article-wrap blockquote{border-left:3px solid var(--orange);padding:1rem 1.5rem;margin:2rem 0;font-size:1rem;color:var(--text);font-style:italic;}
   .step{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin:1rem 0;display:flex;gap:1rem;}
   .step-num{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:700;color:var(--orange);flex-shrink:0;width:2rem;}
@@ -99,6 +101,7 @@
   .related h3{font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;}
   .related-links{display:flex;flex-direction:column;gap:0.75rem;}
   .related-links a{color:var(--orange);text-decoration:none;font-size:0.9rem;font-weight:600;}
+  .disclaimer{font-size:0.83rem;color:var(--muted);margin-top:1.5rem;}
   footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-size:0.78rem;color:var(--muted);}
   footer a{color:var(--muted);text-decoration:none;margin:0 0.5rem;}
   footer a:hover{color:var(--text);}
@@ -207,7 +210,7 @@
 <nav>
   <a href="/" class="logo">Not Built For <span>This</span></a>
   <div class="nav-links">
-
+    <a href="/adhd-admin-hub.html">ADHD Admin Hub</a>
     <a href="/about.html">About</a>
     <a href="https://www.tiktok.com/@doompile" target="_blank" class="nav-cta">Doom Pile →</a>
   </div>
@@ -218,6 +221,10 @@
   
 <h1>Why You Create Doom Piles <em>(and Can't Start Sorting Them)</em></h1>
 <p class="article-intro">You're not disorganised. You're not lazy. You're not "bad at adulting." The reason you create doom piles — and can't clear them — is rooted in how your brain actually works.</p>
+<div class="summary-box">
+  <div class="summary-label">In short</div>
+  <p>In short: doom piles happen when admin collides with executive dysfunction, uncertainty and shame. The pile is not the problem on its own. It is the visible result of a brain that is struggling to start.</p>
+</div>
 <h2>The pile isn't the problem</h2>
 <p>The pile is a symptom. What's actually happening is a problem with task initiation — the brain's ability to start a task even when you know exactly what needs doing and genuinely want to do it.</p>
 <p>This is one of the core features of executive dysfunction, which affects people with <strong>ADHD, autism, anxiety, depression, chronic fatigue, and burnout</strong>. It's not a personality trait. It's a neurological pattern.</p>
@@ -236,17 +243,20 @@
 <h2>You're not broken</h2>
 <p>Having a doom pile does not mean you are failing at life. It means your brain works in a way that the standard systems weren't designed for. The pile is information, not evidence.</p>
 <div class="related"><h3>Read next</h3><div class="related-links">
+<a href="/adhd-admin-hub.html">ADHD Admin Hub →</a>
+<a href="/reset-session.html">Reset Session from Not Built For This →</a>
 <a href="/posts/what-is-doom-pile.html">What is a doom pile? →</a>
 <a href="/posts/how-to-fix-doom-pile.html">How to fix a doom pile when everything feels too much →</a>
 </div></div>
   <div class="cta-box">
     <h3>If this feels familiar</h3>
-    <p>You don't need more discipline. You need a way to start without pressure.</p>
+    <p>You don't need more discipline. You need a way to start without pressure. If you want calm structure and body doubling, the <a href="/reset-session.html" style="color:var(--text);font-weight:600;">Reset Session</a> is the most supported option.</p>
     <a href="https://doompile.co.uk" target="_blank" class="btn-primary">Try Doom Pile — first try free →</a>
   </div>
+  <p class="disclaimer">This is practical support, not medical advice.</p>
 </div>
 <footer>
-  <p>© 2026 SJK Labs · <a href="/posts/">Stories</a> · <a href="/about.html">About</a> · <a href="https://doompile.co.uk" target="_blank">Doom Pile</a></p>
+  <p>© 2026 SJK Labs · <a href="/posts/">Stories</a> · <a href="/adhd-admin-hub.html">ADHD Admin Hub</a> · <a href="/about.html">About</a> · <a href="/doom-pile.html">Doom Pile</a></p>
 </footer>
 </body>
 </html>

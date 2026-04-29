@@ -379,6 +379,44 @@
     color:rgba(240,237,230,0.62);
   }
 
+  .definition-box{
+    max-width:960px;
+    margin:0 auto 2rem;
+    padding:1.45rem 1.5rem;
+    background:linear-gradient(135deg,var(--bg2),rgba(22,32,53,0.84));
+    border:1px solid var(--border);
+    border-radius:22px;
+  }
+
+  .definition-box p{
+    max-width:760px;
+    margin-bottom:0.9rem;
+  }
+
+  .definition-box p:last-child{margin-bottom:0;}
+
+  .geo-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.7rem;
+    margin-top:1rem;
+  }
+
+  .geo-links a{
+    display:inline-flex;
+    align-items:center;
+    padding:0.58rem 0.9rem;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,0.12);
+    background:rgba(255,255,255,0.04);
+    color:var(--text);
+    text-decoration:none;
+    font-size:0.82rem;
+    font-weight:700;
+  }
+
+  .geo-links a:hover{border-color:rgba(255,255,255,0.22);}
+
   .system-mark{
     display:inline-flex;
     align-items:center;
@@ -656,7 +694,7 @@
   "@id": "https://notbuiltforthis.co/#website",
   "url": "https://notbuiltforthis.co",
   "name": "Not Built For This",
-  "description": "Low-friction digital tools for neurodivergent and overwhelmed people. ADHD resources, doom pile guides, and the Doom Pile tool.",
+  "description": "Not Built For This creates low-friction tools, guides and sessions for adults with ADHD, executive dysfunction and life-admin overwhelm.",
   "publisher": {
     "@type": "Organization",
     "@id": "https://notbuiltforthis.co/#organisation"
@@ -671,6 +709,7 @@
   "@id": "https://notbuiltforthis.co/#organisation",
   "name": "Not Built For This",
   "url": "https://notbuiltforthis.co",
+  "description": "Not Built For This creates low-friction tools, guides and sessions for adults with ADHD, executive dysfunction and life-admin overwhelm.",
   "founder": {
     "@type": "Person",
     "@id": "https://notbuiltforthis.co/#sarah-kemp"
@@ -695,7 +734,7 @@
     "https://www.linkedin.com/in/sarahjkemp/",
     "https://www.tiktok.com/@doompilesarah"
   ],
-  "description": "Founder of Not Built For This and Doom Pile. Journalist, narrative strategist, qualified fitness instructor, and neurodivergent founder creating low-friction tools for people with ADHD and executive dysfunction.",
+  "description": "Sarah Kemp is the founder of Not Built For This, a platform creating practical tools and sessions for adults with ADHD, executive dysfunction and life-admin overwhelm.",
   "knowsAbout": [
     "ADHD",
     "Executive Dysfunction",
@@ -711,10 +750,10 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
+  "@type": "SoftwareApplication",
   "name": "Doom Pile",
-  "description": "A subscription tool for clearing mental and physical backlogs. For brains that have been 'meaning to get to it.' Remove friction. Start small. Make progress.",
-  "url": "https://doompile.co.uk",
+  "description": "Doom Pile is a simple tool from Not Built For This that helps adults with ADHD and executive dysfunction sort overwhelming admin into manageable next steps.",
+  "url": "https://notbuiltforthis.co/doom-pile",
   "brand": {
     "@type": "Organization",
     "@id": "https://notbuiltforthis.co/#organisation"
@@ -731,7 +770,7 @@
       "unitCode": "ANN"
     }
   },
-  "applicationCategory": "Productivity"
+  "applicationCategory": "ProductivityApplication"
 }
 </script>
 
@@ -740,18 +779,31 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "The ADHD Admin System",
-  "description": "A digital download (£3.99) for late-diagnosed adults and people with ADHD. Includes: admin checklist, doom pile triage guide, neuroscience explainer, weekly reset routine template.",
-  "url": "https://6801130111572.gumroad.com/l/adhd-admin-starter-kit",
+  "description": "The ADHD Admin System is a practical workbook and system for sorting post, forms, bills, renewals, emails, appointments and life-admin tasks without shame.",
+  "url": "https://notbuiltforthis.co/adhd-admin-system",
   "brand": {
     "@type": "Organization",
     "@id": "https://notbuiltforthis.co/#organisation"
   },
   "offers": {
     "@type": "Offer",
-    "price": "9",
+    "price": "3.99",
     "priceCurrency": "GBP"
-  },
-  "applicationCategory": "Productivity"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Reset Session",
+  "description": "The Reset Session is a guided body-doubling session for adults with ADHD who want to take one small step towards an admin task they have been avoiding.",
+  "url": "https://notbuiltforthis.co/reset-session",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://notbuiltforthis.co/#organisation"
+  }
 }
 </script>
 
@@ -777,6 +829,7 @@
   <a href="/" class="logo">Not Built For <span>This</span></a>
   <div class="nav-links">
     <a href="/about.html">About</a>
+    <a href="/adhd-admin-hub.html">ADHD Admin Hub</a>
     <a href="/not-built-for-this-score.html">The Score</a>
     <a href="https://www.tiktok.com/@doompilesarah" target="_blank" class="nav-cta">TikTok @doompilesarah</a>
   </div>
@@ -785,17 +838,30 @@
 <div class="hero">
   <div class="hero-left">
     <h1>The system wasn't built <em>for us.</em></h1>
-    <p>For late-diagnosed adults, corporate escapees, and anyone who spent years excelling inside a system that was quietly breaking them. Start with The ADHD Admin System — then use Doom Pile when your brain won’t let you start.</p>
+    <p>For late-diagnosed adults, corporate escapees, and anyone who spent years excelling inside a system that was quietly breaking them. Start with the ADHD Admin System, then use Doom Pile when your brain won’t let you start.</p>
 
     <div class="hero-btns">
       <a href="#the-system" class="btn-primary">See how it works</a>
-      <a href="https://6801130111572.gumroad.com/l/adhd-admin-starter-kit" target="_blank" class="btn-ghost">Get the ADHD Admin System</a>
+      <a href="/adhd-admin-system.html" class="btn-ghost">Get the ADHD Admin System</a>
     </div>
   </div>
 
   <div class="hero-right">
     <img src="/images/sarah-image.png?v=2" alt="Sarah Kemp" class="hero-image" />
     <div class="hero-badge">Founder, Not Built For This and Doom Pile</div>
+  </div>
+</div>
+
+<div class="definition-box">
+  <div class="section-tag">What Not Built For This Is</div>
+  <p><strong>Not Built For This creates low-friction tools, guides and sessions for adults with ADHD, executive dysfunction and life-admin overwhelm.</strong></p>
+  <p>We help people who feel buried by post, forms, bills, renewals, emails, appointments and unfinished tasks build simple systems that reduce shame, lower friction and make life admin feel possible.</p>
+  <div class="geo-links">
+    <a href="/adhd-admin-hub.html">ADHD Admin Hub</a>
+    <a href="/doom-pile.html">Doom Pile</a>
+    <a href="/adhd-admin-system.html">ADHD Admin System</a>
+    <a href="/reset-session.html">Reset Session</a>
+    <a href="/about.html">About</a>
   </div>
 </div>
 
@@ -815,7 +881,7 @@
       <div class="system-tier">£9.99/year</div>
       <div class="system-doompile-logo"><span class="doom">doom</span><span class="pile">pile</span></div>
       <p>The tool for when your brain won't let you start. Pick a pile, get one clear next step.</p>
-      <a href="https://doompile.co.uk" target="_blank" class="system-link">Try Doom Pile →</a>
+      <a href="/doom-pile.html" class="system-link">Try Doom Pile →</a>
     </div>
 
     <div class="system-card system-card-system">
@@ -825,7 +891,7 @@
       <h3>The ADHD Admin System</h3>
       <p>A digital system for late-diagnosed adults, high-functioning strugglers, and anyone who looks fine on paper but feels buried by post, forms, renewals, bills, and the things they still haven't done.</p>
       <div class="system-meta"><span>Print-ready</span><span>Self-paced</span></div>
-      <a href="https://6801130111572.gumroad.com/l/adhd-admin-starter-kit" target="_blank" class="system-link">Get the system →</a>
+      <a href="/adhd-admin-system.html" class="system-link">Get the system →</a>
     </div>
 
     <div class="system-card system-card-reset">
@@ -835,7 +901,7 @@
       <h3>The ADHD Admin Reset Session</h3>
       <p>A calm, no-shame online reset for adults with ADHD who feel buried by post, forms, bills, emails and life admin. Gentle mobility, guided admin triage, body doubling, and the 12-page ADHD Admin System workbook included.</p>
       <div class="system-meta"><span>Body doubling</span><span>No shame</span></div>
-      <a href="https://buytickets.at/sjklabs/2184464" target="_blank" class="system-link">Join the next session →</a>
+      <a href="/reset-session.html" class="system-link">Join the next session →</a>
     </div>
   </div>
 </div>
