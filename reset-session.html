@@ -58,7 +58,7 @@
     <div class="nav-links">
       <a href="/adhd-admin-hub.html">ADHD Admin Hub</a>
       <a href="/about.html">About</a>
-      <a href="/reset.html" class="nav-cta">Join the list</a>
+      <a href="#session-signup" class="nav-cta">Join the waitlist</a>
     </div>
   </nav>
   <main class="page-shell">
@@ -73,7 +73,7 @@
         <p>In short: this is the most supported option. If you want calm structure, body doubling and a low-shame way back into an avoided admin task, this is the place to start.</p>
       </div>
       <div class="button-row">
-        <a class="btn-primary" href="/reset.html">Get the scripts and early access</a>
+        <a class="btn-primary" href="#session-signup">Join the waitlist</a>
         <a class="btn-ghost" href="/adhd-admin-hub.html">Back to the ADHD Admin Hub</a>
       </div>
     </header>
@@ -88,8 +88,52 @@
 
     <section class="content-section">
       <h2>How tickets work now</h2>
-      <p>The Reset Session is being sold to the email list, not through a separate ticket funnel yet. So the right next step is to get the scripts and join the list first.</p>
-      <p>Everyone on that list gets first notice when tickets open, plus £19 founder pricing before the public early-bird goes live.</p>
+      <p>The Reset Session has its own waitlist now. If you want first notice when tickets open, plus founder pricing, sign up below and I’ll tag you properly inside the same Mailchimp audience.</p>
+      <p>You do not need a separate list for this. It is one audience, with a Reset Session waitlist tag behind the scenes.</p>
+    </section>
+
+    <section class="content-section" id="session-signup">
+      <div class="info-box form-card hero-form-card">
+        <div id="mce-error-response-session" class="form-response" aria-live="polite"></div>
+        <div id="mce-success-panel-session" class="success-card summary-box" style="display:none;">
+          <h2>You're on the waitlist.</h2>
+          <p>Check your email — confirmation should land in under a minute. When tickets open, you’ll hear before everyone else.</p>
+          <p>You’ll also get the £19 founder price before the public early-bird goes live.</p>
+        </div>
+        <form action="https://promptlypr.us6.list-manage.com/subscribe/post?u=39e1171eb01d9cde1732c28f5&amp;id=d3d5e4b139&amp;f_id=00efeae1f0" method="post" id="mc-embedded-subscribe-form-session" name="mc-embedded-subscribe-form-session" class="validate" novalidate>
+          <div class="form-stack">
+            <div class="mc-field-group">
+              <h2>Join the Reset Session waitlist</h2>
+              <label for="mce-EMAIL-session">Email address</label>
+              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL-session" required value="" placeholder="you@example.com">
+            </div>
+
+            <div id="mergeRow-gdpr-session" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+              <div class="content__gdpr">
+                <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                  <div class="checkbox-row">
+                    <input type="checkbox" id="gdpr_7001_session" name="gdpr[7001]" class="gdpr" value="Y" required>
+                    <label class="checkbox subfield" for="gdpr_7001_session">
+                      Yes, email me about the Reset Session and future ADHD admin sessions. You can unsubscribe any time.
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div hidden><input type="hidden" name="tags" value="101183"></div>
+
+            <div aria-hidden="true" style="position:absolute; left:-5000px;">
+              <input type="text" name="b_39e1171eb01d9cde1732c28f5_d3d5e4b139" tabindex="-1" value="">
+            </div>
+
+            <div class="clear">
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe-session" class="btn-primary" value="Join the waitlist">
+            </div>
+          </div>
+        </form>
+        <p class="form-note">You’ll get first notice when tickets open, plus the £19 founder price. Unsubscribe any time.</p>
+      </div>
     </section>
 
     <section class="content-section">
@@ -132,5 +176,75 @@
   <footer>
     <p>© 2026 SJK Labs · <a href="/">Home</a> · <a href="/adhd-admin-hub.html">ADHD Admin Hub</a> · <a href="/about.html">About</a></p>
   </footer>
+  <script>
+    (function () {
+      var form = document.getElementById('mc-embedded-subscribe-form-session');
+      var errorBox = document.getElementById('mce-error-response-session');
+      var successPanel = document.getElementById('mce-success-panel-session');
+      var submitButton = document.getElementById('mc-embedded-subscribe-session');
+      var note = document.querySelector('#session-signup .form-note');
+
+      if (!form) return;
+
+      function showError(message) {
+        errorBox.textContent = message;
+        errorBox.className = 'form-response is-error';
+      }
+
+      function clearError() {
+        errorBox.textContent = '';
+        errorBox.className = 'form-response';
+      }
+
+      function showSuccess() {
+        form.style.display = 'none';
+        if (note) note.style.display = 'none';
+        successPanel.style.display = 'block';
+        clearError();
+        successPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        clearError();
+
+        if (!form.reportValidity()) return;
+
+        submitButton.disabled = true;
+        submitButton.value = 'Joining...';
+
+        var formData = new FormData(form);
+        var params = new URLSearchParams(formData);
+        var callbackName = 'mailchimpSessionCallback_' + Date.now();
+        var action = form.getAttribute('action').replace('/post?', '/post-json?');
+        params.append('c', callbackName);
+
+        window[callbackName] = function (response) {
+          submitButton.disabled = false;
+          submitButton.value = 'Join the waitlist';
+          delete window[callbackName];
+          if (script.parentNode) script.parentNode.removeChild(script);
+
+          if (response && (response.result === 'success' || /already subscribed/i.test(response.msg || ''))) {
+            showSuccess();
+            return;
+          }
+
+          showError("Something went wrong on our end. Try again, or email sarah@notbuiltforthis.co and I'll add you manually.");
+        };
+
+        var script = document.createElement('script');
+        script.src = action + '&' + params.toString();
+        script.onerror = function () {
+          submitButton.disabled = false;
+          submitButton.value = 'Join the waitlist';
+          delete window[callbackName];
+          showError("Something went wrong on our end. Try again, or email sarah@notbuiltforthis.co and I'll add you manually.");
+        };
+
+        document.body.appendChild(script);
+      });
+    }());
+  </script>
 </body>
 </html>
