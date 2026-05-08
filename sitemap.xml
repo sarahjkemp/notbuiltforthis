@@ -98,9 +98,15 @@
   </url>
   <url>
     <loc>https://notbuiltforthis.co/posts/</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notbuiltforthis.co/posts/hyrox-cardiff</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notbuiltforthis.co/posts/snowbombing</loc>
